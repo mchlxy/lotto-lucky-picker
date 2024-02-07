@@ -17,7 +17,7 @@
         </div>
         <div class="mt-8">
             <div class="flex flex-col items-center">
-                <select id="countries" class="py-2 px-4 w-full bg-gray-800 text-white rounded-md focus:outline-none mb-4">
+                <select id="lotto" class="py-2 px-4 w-full bg-gray-800 text-white rounded-md focus:outline-none mb-4">
                     <option selected>Choose a lotto type</option>
                     <option value="2d">2D</option>
                     <option value="3d">3D</option>
@@ -63,7 +63,7 @@
     <!-- ... -->
     <script>
         function generateRandomNumbers() {
-            const selectedLotto = document.getElementById("countries").value;
+            const selectedLotto = document.getElementById("lotto").value;
             let maxNumber;
 
             switch (selectedLotto) {
